@@ -3,7 +3,7 @@
   #include <avr/power.h>
 #endif
 #define LED_PIN 6
-#define BUTTON 2
+#define BUTTON 4
 
 
 Adafruit_NeoPixel matrix = Adafruit_NeoPixel(64, LED_PIN, NEO_GRB + NEO_KHZ800);
@@ -13,7 +13,7 @@ uint32_t off = matrix.Color(0 ,0, 0);
 int maximum = 32;
 
 void setup() {
-  pinMode(BUTTON, INPUT);
+  pinMode(BUTTON, INPUT_PULLUP);
   matrix.begin();
   matrix.show();
   randomSeed(analogRead(0));
@@ -22,7 +22,7 @@ void setup() {
 void loop() {
   buttonState = digitalRead(BUTTON); 
 
-  if(buttonState == HIGH){
+  if(buttonState == LOW){
     count = count + 1; 
     if (count == maximum){
       // turn the matrix off
@@ -39,7 +39,7 @@ void loop() {
       matrix.show();
     }
   }
-  delay(120);
+  delay(200);
 }
 
 void turn_all_off() {
