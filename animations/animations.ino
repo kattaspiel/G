@@ -7,11 +7,11 @@
 // 1 -- house pattern
 // 2 -- elevator
 // 3 -- circle
-#define PATTERN 3
+#define PATTERN 2
 // Delay in milliseconds
-#define PAUSE 5000
-//stand still of last pattern
-#define GREAT_PAUSE 600
+#define PAUSE 500
+//stand still of last pattern in milliseconds
+#define GREAT_PAUSE 500
 
 Adafruit_NeoPixel matrix = Adafruit_NeoPixel(64, LED_PIN, NEO_GRB + NEO_KHZ800);
 uint32_t off = matrix.Color(0 ,0, 0);
