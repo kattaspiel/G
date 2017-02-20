@@ -1216,7 +1216,15 @@ void insertObject(unsigned long code, int mode_) {
     objectCounter ++;
   }
 
-
+  //=
+  if (code == 236768) {
+    static const int listX[6] = {1, 1, 2, 2, 3, 3};
+    static const int listY[6] = {2, 3, 2, 3, 2, 3};
+    memcpy(updaterX, listX, sizeof(listX));
+    memcpy(updaterY, listY, sizeof(listY));
+    updaterN = 6;
+    objectCounter ++;
+  }
 
   if (objectCounter > MAX_PRIMITIVES)
     objectCounter = 1;
