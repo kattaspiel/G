@@ -682,6 +682,7 @@ void insertObject(unsigned long code, int mode_) {
       updaterN = 11;
       objectCounter ++;
     }*/
+  
   if (code == 10975563) {
     static const int listX[21] = {1, 1, 1, 1, 2, 2, 4, 4, 4, 4, 5, 7, 7, 7, 7, 8, 8, 9, 9, 9, 9};
     static const int listY[21] = {1, 2, 3, 4, 1, 3, 1, 2, 3, 4, 4, 1, 2, 3, 4, 1, 4, 1, 2, 3, 4};
@@ -709,7 +710,6 @@ void insertObject(unsigned long code, int mode_) {
     objectCounter ++;
   }
 
-  // 1
   if (code == 6043609) {
     static const int listX[4] = {1, 1, 1, 1};
     static const int listY[4] = {1, 2, 3, 4};
@@ -796,91 +796,6 @@ void insertObject(unsigned long code, int mode_) {
     objectCounter ++;
   }
 
-  //2
-  if (code == 4631776) {
-    static const int listX[11] = {1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3};
-    static const int listY[11] = {1, 3, 4, 5, 1, 3, 5, 1, 2, 3, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 11;
-    objectCounter ++;
-  }
-
-
-  //3
-
-  if (code == 9473543) {
-    static const int listX[10] = {1, 1, 2, 2, 2, 3, 3, 3, 3, 3};
-    static const int listY[10] = {1, 5, 1, 3, 5, 1, 2, 3, 4, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 10;
-    objectCounter ++;
-  }
-
-
-
-  //4
-
-  if (code == 781403) {
-    static const int listX[9] = {1, 1, 1, 2, 3, 3, 3, 3, 3};
-    static const int listY[9] = {1, 2, 3, 3, 1, 2, 3, 4, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 9;
-    objectCounter ++;
-  }
-
-
-
-  //5
-
-  //6
-
-  if (code == 11071908) {
-    static const int listX[12] = {1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3};
-    static const int listY[12] = {1, 2, 3, 4, 5, 1, 3, 5, 1, 3, 4, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 12;
-    objectCounter ++;
-  }
-
-  //7
-
-  if (code == 4582666) {
-    static const int listX[7] = {1, 2, 3, 3, 3, 3, 3};
-    static const int listY[7] = {1, 1, 1, 2, 3, 4, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 7;
-    objectCounter ++;
-  }
-
-
-  //8
-
-  if (code == 11073112) {
-    static const int listX[13] = {1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3};
-    static const int listY[13] = {1, 2, 3, 4, 5, 1, 3, 5, 1, 2, 3, 4, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 13;
-    objectCounter ++;
-  }
-
-  //9
-
-  if (code == 234888) {
-    static const int listX[12] = {1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3};
-    static const int listY[12] = {1, 2, 3, 5, 1, 3, 5, 1, 2, 3, 4, 5};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 12;
-    objectCounter ++;
-  }
-
-  
   //A
   if (code == 13305467) {
     static const int listX[14] = {1, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 5};
@@ -893,7 +808,7 @@ void insertObject(unsigned long code, int mode_) {
 
   
   //B
-  if (code == 10797560) {
+  if (code == 11063881) {
     static const int listX[13] = {1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4};
     static const int listY[13] = {1, 2, 3, 4, 5, 1, 3, 5, 1, 3, 5, 2, 4};
     memcpy(updaterX, listX, sizeof(listX));
@@ -975,7 +890,7 @@ void insertObject(unsigned long code, int mode_) {
   }
 
   //J
-  if (code == 461385) {
+  if (code == 4734280) {
     static const int listX[9] = {1, 1, 2, 2, 3, 3, 3, 3, 3};
     static const int listY[9] = {1, 4, 1, 5, 1, 2, 3, 4, 5};
     memcpy(updaterX, listX, sizeof(listX));
@@ -1077,11 +992,11 @@ void insertObject(unsigned long code, int mode_) {
 
   //T
   if (code == 10812977) {
-    static const int listX[7] = {1, 2, 2, 2, 2, 2, 3};
-    static const int listY[7] = {1, 1, 2, 3, 4, 5, 1};
+    static const int listX[9] = {1, 2, 3, 3, 3, 3, 3, 4, 5};
+    static const int listY[9] = {1, 1, 1, 2, 3, 4, 5, 1, 1};
     memcpy(updaterX, listX, sizeof(listX));
     memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 7;
+    updaterN = 9;
     objectCounter ++;
   }
 
@@ -1178,56 +1093,9 @@ void insertObject(unsigned long code, int mode_) {
     updaterN = 9;
     objectCounter ++;
   }
-  
-  //+
-  if (code == 10983777) {
-    static const int listX[5] = {1, 2, 2, 2, 3};
-    static const int listY[5] = {3, 2, 3, 4, 3};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 5;
-    objectCounter ++;
-  }
 
-  //-
-  if (code == 12937240) {
-    static const int listX[3] = {1, 2, 3};
-    static const int listY[3] = {3, 3, 3};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 3;
-    objectCounter ++;
-  }
+ 
 
-  //dot
-  if (code == 12937240) {
-    static const int listX[1] = {2};
-    static const int listY[1] = {3};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 1;
-    objectCounter ++;
-  }
-
-  ///
-  if (code == 5645630) {
-    static const int listX[3] = {1, 2, 3};
-    static const int listY[3] = {4, 3, 2};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 3;
-    objectCounter ++;
-  }
-
-  //=
-  if (code == 236768) {
-    static const int listX[6] = {1, 1, 2, 2, 3, 3};
-    static const int listY[6] = {2, 4, 2, 4, 2, 4};
-    memcpy(updaterX, listX, sizeof(listX));
-    memcpy(updaterY, listY, sizeof(listY));
-    updaterN = 6;
-    objectCounter ++;
-  }
 
   if (objectCounter > MAX_PRIMITIVES)
     objectCounter = 1;
